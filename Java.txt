@@ -1,0 +1,144 @@
+- robust means fault tolerance which means it handles the any situation
+- multi threading means two action can run simultaneously. eg in word we are writing and auto spelling check also happening
+* features - simple, object oriented lang, robust, multi threading, portable, secure, garbage collector, interpreted
+
+JVM - Java Virtual Machine
+to run the Java code (or .class file (byte code)) we use JVM.
+JVM is different for different OS.[ Platform Dependent ]
+JVM is software
+
+JIT - Just-in-time Compiler
+compiler means it converts the code into other format which machine can understand and stored in somewhere so it can execute so many times as we want
+
+[ summary - it creates the new file and stores the translated code ]
+
+interpreter it read the code line by line and it translate the code and given to operating system and os will execute
+
+[ summary - it doesnot store the code ]
+
+How to compile
+Hello.java -> Hello.class
+source file to byte code
+
+How to run
+Hello.class -> JVM --(JIT Compiler) -> OS
+
+JDK - Java Development Kit
+we need jdk because we can develope the java code.
+it responsible for converting the code into byte code.
+In jdk we also have compiler (javac.exe), application launcher(java.exe)
+
+** javac.exe used for creating .class file or byte code **
+** java.exe used for start java program **
+
+
+JRE - Java Runtime Enviornment
+for running the java code
+It contains the JVM and Java Package Classes(Java Library)
+
+
+Access Specifers - 1. Public 2. Private 3. Protected ( extended from parent class and we can use in the child class)
+4. Default
+
+System.out.println()
+
+System is the class. In system class we have out refernece variable which represent the object
+
+
+run ->
+1. javac ClassName.java [ convert to byte code ]
+2. java ClassName [ run the byte code ]
+
+
+What is Data Type?
+A type identifies a set of values (and their representions in memory) and a set of operations that transforms these values into other values of that set.
+
+** String is not primitive type **
+
+primitive type - predefined type or in-built-in type
+Primitive Type                  Size
+boolean                         implementation Dependent
+char                            16bits (Stores unicode)
+byte                            8bits -128 to 127
+short                           16bits -32768 to 32767
+int                             32bits -2147483648
+long                            64bits -9223372036854775808
+float                           32bits
+double                          64bits
+
+
+
+Integer constant can be specified in the decimal, hexadecimal, octal or binary format
+
+127 decimal
+0x7f hexadecimal [7x base 16] ->  0x is prefix
+0177 octal -> 0 is prefix
+0b011101100 binary -> 0b is prefix
+
+
+** byte range can be specified in the -128 to 127 **
+** short range can be specified in the -32768 to 32767 **
+
+Permitted Conversions Type
+
+byte to short, int, long, float, double
+short to int, long, float, double
+char to int, long, float, double
+int to long, float, double
+long to float, double
+float to double
+
+
+Class
+
+Class is a description of an object's property and behavior
+Creating class is as good as creating data type
+** Class is defining a category of data **
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
