@@ -1,0 +1,50 @@
+Class
+
+Class is a description of an object's property and behavior
+Creating class is as good as creating data type
+** Class is defining a category of data **
+
+Object
+
+Object is a real world entity.
+Object is an instance of a class.
+** Object consumes memory to hold property values **
+
+
+** In Java object will create using new() keyword **
+
+class Box{
+    // these are the properties
+    // instance variable member length, breadth, height
+    private int length, breadth, height;
+
+    // these are the methods
+    // instance member functions
+    public void setDimension(int l, int b, int h){
+        length = l;
+        breadth = b;
+        height = h;
+    }
+
+    public void showDimension(){
+        System.out.println("length: " + length+" breadth: " + breadth+" height: " + height);
+    }
+
+
+}
+
+class Example{
+    public static void main(String[] args) {
+        Box smallBox = new Box();
+        smallBox.setDimension(1,2,3);
+        smallBox.showDimension();
+
+        // above 33  and 34 line will gone to garbage collecotr becuase object is referring to another instance.
+
+        // smallBox is aka refernceVariable
+
+        smallBox = new Box();
+        smallBox.setDimension(3,4,5);
+        smallBox.showDimension();
+    }
+}
