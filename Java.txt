@@ -88,18 +88,30 @@ int to long, float, double
 long to float, double
 float to double
 
+Static Members
+1. Static member variable
 
-Class
+2. Static member function
 
-Class is a description of an object's property and behavior
-Creating class is as good as creating data type
-** Class is defining a category of data **
+3. and not Static variable in method
 
-
-
-
+4. but we can have start inner class
 
 
+Static variable -
+
+decalration using static keyword
+Static variable are by default initialized to its default value
+Static variable has a single copy for the whole class and does not depend on the objects
+
+Static function -
+
+Static function defined inside the class  are qualifed with keyword static
+Static function can only access static members of the same class
+Static function can be invoked using class name and dot operator
+
+
+static member functions apni class ke static members ko access kar sakhte hai.
 
 
 

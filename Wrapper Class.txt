@@ -1,0 +1,82 @@
+Wrapper Class
+
+Java allows you to include the primitives in the family of objects by using what are called wrapper classess.
+
+example.
+
+The Integer class wraps a value of the primitive type int in an object. An object of type Integer contains a single field whose type is int.
+
+
+There is a wrapper class for every primitive data type in Java.
+
+For instance the wrapper class for int is Integer, for float is Float and so on.
+
+
+- useful methods of wrapper class
+means provide the additional functionality
+1. valueOf()
+- static method
+- Return Object refernece of relative wrapper class
+
+2. parseXXX() or parseInt() or it availble for every class like parseChar()
+- static method
+- it can be replaced by any primitive type
+- it returns xxx type value
+
+3. xxxValue()
+- Instance method of wrapper class
+- xxx can be replaced by any primitive type
+- returns corresponding primitive type
+
+--------------------------------------------------------
+
+Packages
+
+For source code to byte code
+> javac HelloWorld.java
+
+output [ -> HelloWorld.class ]
+
+
+For creating directory structure
+> javac -d . HelloWorld.java
+
+it will create "world package" in that it will create HelloWorld.class file
+
+to run the package
+java packageName.ClassName
+> java world.HelloWorld
+
+--------------------------------------------------------
+Code
+--------------------------------------------------------
+package world;
+
+public class  HelloWorld{
+    public static void main(String[] args) {
+        System.out.println("Hello World");
+    }
+}
+
+
+--------------------------------------------------------
+
+In java file we have only one public class
+Name of the file should be same as the name of public class
+
+In absence of public class, any class name can be given to the file name.
+
+Example
+--------------------------------------------------------
+Code
+
+xyz.java file name and class name HelloWorld look it will work because it doesnot have the public class
+--------------------------------------------------------
+package world;
+
+class  HelloWorld{
+    public static void main(String[] args) {
+        System.out.println("Hello World");
+    }
+}
+--------------------------------------------------------
