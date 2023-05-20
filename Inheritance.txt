@@ -1,0 +1,98 @@
+class SubClass extends SuperClass{
+
+}
+extend is a keyword
+Base class means Super Class
+Derived class means Sub Class
+
+to compile all files
+
+javac *.java
+
+
+
+
+1. In java programming language, each class is allowed to have one direct superclass, and each superclass has the potential for an unlimited inheritance. number of subclassess.
+
+
+----------------------------------------------------------
+not allowed in java programming
+
+class SubClass extends SuperClass, Superclass1, superclass2{
+
+}
+
+----------------------------------------------------------
+
+
+2. private members of superclass are not accessible by the subclass and can only be indirectly accessed.
+
+3. Members that have default accessibility in the superclass are also not accessible by subclasses in other packages.
+
+
+1. Single Inheritance
+In single inheritance, a sub-class is derived from only one super class.
+
+Employee -> Executive
+
+
+2. Multilevel Inheritance
+In multi-level inheritance, a class is derived from a class which is also derived from another class is called multi-level inheritance.
+
+student
+^
+|
+marks
+^
+|
+sports
+
+3. Hierarchical Inheritance
+If a number of classes are derived from a single base class, it is called hierarchical inheritance.
+student
+->science
+->commerce
+->arts
+
+4. Hybrid Inheritance
+Hybrid means consist of more than one. Hybrid inheritance is the combination of two or more types of inheritance.
+
+GrandFather
+    ^
+    |
+   Father
+^           ^
+|           |
+son     daughter
+
+
+** Multiple Inheritance is not supported in java **
+
+Multiple Inheritance (not supported)
+Java does not support multiple inheritances due to ambiguity. For example, consider the following Java program.
+
+Demo.java
+
+class Wishes
+{
+void message()
+{
+System.out.println("Best of Luck!!");
+}
+}
+class Birthday
+{
+void message()
+{
+System.out.println("Happy Birthday!!");
+}
+}
+public class Demo extends Wishes, Birthday  //considering a scenario
+{
+public static void main(String args[])
+{
+Demo obj=new Demo();
+//can't decide which classes' message() method will be invoked
+obj.message();
+}
+}

@@ -1,0 +1,30 @@
+Constructor is a member function of a class.
+
+The name of constructor is the name of the class.
+
+Constructor has no return type.
+
+why do we need constructor?
+
+A constructor is a special method that is used to initialize a newly created object and is called implictly, just after the memory is allocated for the object.
+
+just aapn object create kela and kahi assign nahi kela values vagere tr default memory location madhe values zero assign hotil. pn object create kela nantr 1 step madhe constructor call hoto. he apyla manavr ahe ki constructor define karycha cha ka nahi.
+
+It is not mandatory for the coder to write the constructor for class
+
+When there is no constructor define in the class by programmer, compiler implictly provide a default constructor for the class.
+
+
+default constructor
+
+example
+
+Class Box{
+    public Box(){}
+}
+
+
+Constructor Overloading
+
+Same class name wtih different paramerters.
+

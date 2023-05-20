@@ -1,0 +1,140 @@
+this Keyword
+
+The this (is a refernce Variable) object refernce is a local variable in instance members methods referring the caller object.
+
+ this keyword is used as a reference to the current object which is an instance of the current class.
+
+------------------------------------------------------------
+
+
+class Box{
+    private int l, b, h;
+    public void setDimension(int l, int b, int h){
+        // left side instance variable
+        // right side local variable
+        this.l=l; this.b=b; this.h=h;
+    }
+}
+
+public class Example2 {
+
+    public static void main(String[] args) {
+        Box b1= new Box();
+        b1.setDimension(12,10,5);
+    }
+}
+
+------------------------------------------------------------
+
+ ** why this and purpose ? **
+
+this removing the name conflication. and it representing the collar object.
+
+b1 is collar object
+
+
+------------------------------------------------------------
+
+package test;
+
+class Box{
+    private int l, b, h;
+    public void setDimension(int l, int b, int h){
+        // left side instance variable
+        // right side local variable
+        this.l=l; this.b=b; this.h=h;
+    }
+
+    //Imagine we have another class giftTaker
+    public void sendBox(){
+        GiftTaker gf = new GiftTaker();
+        gf.acceptGift(this); // here we can't directly define the collar object b1 so we have to use this keyword
+
+    }
+
+}
+public class Example2 {
+
+    public static void main(String[] args) {
+        Box b1= new Box();
+        b1.setDimension(12,10,5);
+        b1.sendBox();
+    }
+}
+
+------------------------------------------------------------
+
+Note that this reference cannot be used in a static context, as static references code is not executed in the context of any object.
+
+------------------------------------------------------------
+
+super keyword
+
+------------------------------------------------------------
+
+this and super are refernece variable
+
+this and super stores the current object reference
+
+- If your method overrides one of its superclass's methods, you can invoke the superclass(parent) version of the method through the use of the keyword super.
+
+- It avoids name conflict between member variables of superclass and subclass
+
+------------------------------------------------------------
+
+package test;
+
+class A1{
+    public void f1(){
+        System.out.println("Parent class");
+    }
+}
+
+class B1 extends A1{
+    public void f1(){
+        // here i want to call f1 of a1 so we can use super method
+        super.f1();
+    }
+}
+public class KeywordsExample {
+    public static void main(String[] args) {
+        B1 b1 = new B1();
+        b1.f1();
+    }
+}
+
+------------------------------------------------------------
+
+
+package test;
+
+class A1{
+    int z;
+    public void f1(){
+        System.out.println("Parent class");
+    }
+}
+
+class B1 extends A1{
+    int z;
+    public void f1(){
+        // here i want to call f1 of a1 so we can use super method
+        super.f1();
+    }
+
+    public void f2(){
+        int z;
+        z = 2;
+        this.z = 3;
+        super.z = 4;
+    }
+}
+public class KeywordsExample {
+    public static void main(String[] args) {
+        B1 b1 = new B1();
+        b1.f1();
+        b1.f2();
+    }
+}
+
+

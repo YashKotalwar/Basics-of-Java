@@ -1,0 +1,25 @@
+Java supports four categories of accessibility rules
+- private
+- protected
+- public
+- default
+
+
+Outer class, there can be only two possibilities, either class is a public class or just a class which means it is of default type.
+
+Inner class any among four access modifiers can be used.[public, private, protected, and default]
+
+Member variable and functions
+
+private
+when members of the class are private, they can not accessed from outside the class body.They are meant to be accessed from the same class in which they are decalred.
+
+
+protected
+when members of the class are protected, they can be accessed from any class any class of the "same package" and child class from other package.
+
+public
+when members of the class are public, they are accessible from any class of "any package".
+
+default
+when members of the class are default, they are accessible only from the class of same package.

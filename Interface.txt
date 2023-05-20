@@ -1,0 +1,102 @@
+Interface
+
+Interface definition begins with a keyword interface
+
+Interface ke sare member public honge na ki protected, private
+
+interface ClassName{
+    int x; // automatically public, static, final
+    void somefune(); // automatically abstract class
+}
+
+
+Interfaces just specify the method decalration (implictly public and abstract) and can only contain field (which are implictly public, static, final)
+
+** Interface uses "implements" **
+------------------------------------------------------------
+
+package test;
+
+interface InterfacesClass {
+    void show();
+}
+class base implements InterfacesClass{
+    public void show(){
+        System.out.println("Interface");
+    }
+}
+
+public class Interfaces {
+    public static void main(String[] args) {
+        base b = new base();
+        b.show();
+    }
+}
+------------------------------------------------------------
+An interface like that of an abstract class can not be instantiated
+
+** Interface do not have constructors. **
+
+- Abstract class can't create object and interface also but why interface don't have constructor like abstract??
+
+interface mein sare variables static hote hai not like in abstraction.
+we can't modifiy once define.
+
+
+multiple extensions is allowed when extedning interfaces i.e, one interface can extend none, one or more interfaces.
+
+interface I1{}
+interface I2{}
+interface I3 extends I1, I2{}
+interface I4 {}
+class A{}
+class B extends A implements I3, I4{}
+
+
+** we can create reference variable of interface **
+
+
+interface I1{
+    public void f1(){}
+}
+interface I2{
+    public void f2(){}
+}
+class A implements I1, I2{
+    public void f1(){}
+    public void f2(){}
+    public void f3(){}
+}
+
+class Example{
+    psvm{
+        I1 obj = new A(); // reference variable
+        obj.f1(); // it will call
+        obj.f2(); // this will thr error beacuse it's not for I1 it's for I2
+
+        I2 obj2 = new A();
+        obj2.f2();
+
+    }
+}
+
+
+differnce between abstract and interface
+both can't create objects.
+
+abstract is a class
+interface is not a class
+
+abstract class can have access modifiers for members.
+Interface can have only public members.
+
+Abstract class may or may not contain abstract method.
+Interface can not have defined method.
+
+Abstract class can have static or non static members.
+Interface can have only static member variable.
+
+Abstract class can have final or non final members.
+Interface can have only final member variable.
+
+Interface do not have constructor unlike abstract class.

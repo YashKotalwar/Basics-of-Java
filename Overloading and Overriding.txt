@@ -1,0 +1,20 @@
+Function Overloading or Method Overloading -
+
+If two methods of a class have same name but signatures(paramerters) that are not same, then the method is said to be overloaded.
+
+Method Overloading is a way to implement polymorphism.
+
+
+Function Overriding or Method Overriding -
+
+A method in subclass with the same signatire with specific implementation in respect to the subclass.
+
+Why Overriding?
+Hiding the parent class details.
+
+
+when static keyword is not present in the method then we can do overrdding.
+if it is present then its a function hiding.
+
+
+If subclass has a method method m with same signature as of the method present in the superclass, then method m hides the method of superclass.

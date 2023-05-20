@@ -1,0 +1,75 @@
+Abstract class
+
+Abstract classes are decalred with the abstract keyword.
+
+An abstract class cannot be instantiated. [we can not create objects of abstarct class ]
+
+Java Abstract classes are used to decalre common characteristics of subclasses.
+
+It can only used as a superclass for other classes that extend the abstract class.
+
+
+**  Abstarct class have constructor **
+------------------------------------------------------
+package test;
+
+
+abstract class testA{
+
+    private int age;
+}
+
+class testB extends testA{
+    public void Name(int age){
+        System.out.println("Your name is Yash and age is "
+        +age);
+    }
+}
+public class Abstraction {
+    public static void main(String[] args) {
+        testB test = new testB();
+        test.Name(23);
+
+        testA t = new testA(); // throw error message
+    }
+}
+
+----------------------------------------------------------
+
+Abstract Methods
+
+An abstract class can include methods that contain no implementation. These are called abstarct methods. ** The abstract methods decalration must then end with a semicolon rather than a block. **
+
+Don't provide implementations for abstract methods in abstract class.
+
+
+Note
+If a class has any abstract methods, whether decalred or inherited, the entire class must be decalred abstract.
+
+----------------------------------------------------------
+
+abstract  class PublicPerson{
+    abstract void show();
+}
+class PublicStudent extends Person{
+    void show(){
+        System.out.println("Show in Student");
+    }
+}
+public class Abstraction {
+    public static void main(String[] args) {
+        testB test = new testB();
+        test.Name(23);
+
+        // throw an error objects can't be created of abstarct class
+        // testA t = new testA();
+
+        PublicStudent ps = new PublicStudent();
+        ps.show();
+    }
+}
+----------------------------------------------------------
+
+
+
+
