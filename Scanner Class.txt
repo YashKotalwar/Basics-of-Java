@@ -1,0 +1,19 @@
+Scanner Class
+
+Scanner class is final class, that is can not extended. [ we can't create child class. ]
+
+We can read java input from System.in using Scanner class
+
+A scanner breaks its input into tokens using a delimiter pattern [ending point], which by default matches whitespace
+
+The resulting tokens may then be converted into values of different types using the various next methods.
+
+
+System.in takes input and put in buffer
+Scanner takes input from buffer and convert it into data type.
+
+
+Scanner sc = new Scanner(System.in);
+int a = sc.nextInt();
+
+  
