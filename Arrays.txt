@@ -1,0 +1,38 @@
+// reference variable [ " arr " ]
+        ||
+int[] arr = new int[5];
+int arr[] = new int[5];
+int arr[] = new int[]{1,2,3,4,5};
+
+error: you can not mention size and values together
+example,
+int arr[] = new int[5]{1,2,3,4,5};
+
+
+reference variable to 2d Arrays
+
+int arr[][];
+int[][] arr;
+
+
+int arr[][] = new int[2][2];
+
+but
+
+int arr[][] = new int[][2]; // error
+int arr[][] = new int[][]; //  error
+int arr[][] = new int[2][]; // correct
+
+int arr[][] = new int[][]{{1,2},{3,4},{5,6}};
+
+
+In java it is possible to declare a 2d array with differnet length of each array.
+
+public class Example1{
+    public static void main(String[] args){
+        int[][] a = new int[4][];
+        a[0] = new int[5];
+        a[1] = new int[2];
+        System.out.println(" Length " + a[1].length)
+    }
+}
